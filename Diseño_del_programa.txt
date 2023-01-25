@@ -1,0 +1,13 @@
+Diseño del programa
+	Funciones necesarias:
+		-Librerias Necesarias
+		-Imprimir matrices:
+			Necesitamos una funcion para imprimir matrices y visulizar la matriz en su forma escalonada reducida
+		-Intercambiar filas
+		-Eliminacion Gaussiana:
+			Recorremos las entradas de la matriz por culumnas identificando los indices de las entradas con el mayor valor absoluto
+			y acomodamos las entradas por el valor de sus entradas. Recorremos la matriz de manera horizontal para hacer la eliminacion
+			de cada elemnto por renglon y llevar la matriz a una forma escalonada.
+		-Sustitucion regresiva
+			Al tener la matriz en forma escalonada sustitumimos valores en las ecuaciones anteriores para obtener la solucion gral.
+ 
