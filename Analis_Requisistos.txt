@@ -1,0 +1,11 @@
+Analisis de requisistos
+Proyecto: Solución de Sistema de Ecuaciones 3X3  por el Método de Gauss-Jordan
+	Necesidad: 
+		Solucionar un sistema de ecuaciones 3X3 dado por el metodode gauss Jordan
+	Requisitos:
+		-La unidad de Software debe solucionar un sistema de ecucciones dado, de manera correcta.
+		-Debe poder trabajar connumeros reales, enteros
+		-Debe imprimir la matriz en su forma escalonada reucida
+		-Debe imprimir de forma explicita las soluciones del sistema
+		-El codigo debe estar esctrito en el lenguje de programacion C
+		-El proyecto debe tener un repositorio git con almenos tres entradas 
