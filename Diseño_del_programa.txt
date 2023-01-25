@@ -10,4 +10,9 @@ Diseño del programa
 			de cada elemnto por renglon y llevar la matriz a una forma escalonada.
 		-Sustitucion regresiva
 			Al tener la matriz en forma escalonada sustitumimos valores en las ecuaciones anteriores para obtener la solucion gral.
- 
+ 		-Suma de filas
+			Necesitamos sumar filas para reducira su forma escalonada reducida
+		-Multiplicacion por escalar
+			Necesitamos esta operacion elemntal para llevarla a una forma escalonada reducida
+		-Reduccion a Forma escalonada
+			Despues de obtener la matriz en forma escalonada eliminamos los terminos por arriba de los elemntos en la diagonal

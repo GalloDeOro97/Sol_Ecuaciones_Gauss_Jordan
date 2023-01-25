@@ -59,6 +59,14 @@ void eliminacionGaussiana(double matriz[N][N+1]) {
             }
             matriz[i][k] = 0;
         }
+	// Se agrega la eliminacion de lementos en la diagonal
+	//if(matriz[k][k]!= 1)
+	//   multiplicarFilaporEscalar(matriz,k, 1/matriz[k][k]);
+	//for(int i = k+1; i < N; i++){
+	//    if(matriz[i][k] != 0){
+	 //      sumadeFilas(matriz,i,k,-matriz[i][k]);
+	 //   }
+	//}
     }
 }
 // Hacer una diagonal de unos
@@ -106,29 +114,18 @@ int main() {
         {0, 1, 2, 5},
         {0, 0, 1, 6}
    	 };
-	double matriz_2[N][N+1];
-	for(int j = 0; j < N; j++) {
-	    for(int l = 0; l<=N; l++) {
-		matriz_2[j][l] = matriz[j][l];
-	    }
-	}
-	
     	double x[N];
 	printf("Resolviendo la matriz:\n");
 	imprimirMatriz(matriz);
     	eliminacionGaussiana(matriz);
     	hacerDiagonalUnos(matriz);
-	printf("Solucion por el metodo de Gauss jordan: \n");
+	printf("Su forma escalonada reducida: \n");
 	matrizEscalonadaReducida(matriz);
-	for(int k = 0; k < N; k++) {
-	    printf("x%d = %.2lf \n",k+1,matriz[k][N]);
-	}
-    	//imprimirMatriz(matriz);
-	eliminacionGaussiana(matriz_2);
-    	sustitucionRegresiva(matriz_2, x);
-    	printf("Solucion por el metodo de Gauss: \n");
-    	for(int i = 0; i < N; i++) {
-     	   printf("x%d = %.2lf\n", i+1, x[i]);
-   	 }
+    	imprimirMatriz(matriz);
+    	//sustitucionRegresiva(matriz, x);
+    	//printf("La solucion es: \n");
+    	//for(int i = 0; i < N; i++) {
+     	//   printf("x%d = %.2lf\n", i+1, x[i]);
+   	// }
     	return 0;
 }
